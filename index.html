@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM-Rank</title>
+    <link rel="icon" href="img/caii.png" type="image/icon type">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <script src="javascript/index.js" defer></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="icon">
+            <a class="nav-button" href="index.html"
+                style="margin-left: 2px; font-size: 24px">中国AI大模型工业应用指数
+            </a>
+        </div>
+        <div>
+            <a class="nav-button" href="#home">主页</a>
+            <a class="nav-button" href="#dataset">数据集</a>
+            <a class="nav-button" href="#method">测试方法</a>
+            <a class="nav-button" href="https://github.com/winnylyc/llm-standard">Github</a>
+            <a class="nav-button" href="#leaderboard">排行榜</a>
+            <a class="nav-button" href="#authors">专家组成员</a>
+            <a class="nav-button" href="#contact">联系方式</a>
+            <!-- <a class="nav-button" href="leaderboard.html">排行榜</a> -->
+            <a class="nav-button" href="example.html">例题展示</a>
+            <a class="nav-button" href="visualize.html">可视化比较</a>
+        </div>
+    </div>
+
+    <!-- anchor for the home button -->
+    <div id="home" style="position: absolute; top: 0;"></div>
+
+    <!-- banner -->
+    <div id="title">
+        <div id="title-wrapper">
+            <p id="title-text">中国AI大模型工业应用指数</p>
+        </div>
+
+        <p id="title-padding-bottom">&nbsp;</p>
+    </div>
+
+    <!-- the main body of the page -->
+    <!-- each section uses an empty div as an anchor -->
+    <div id="body">
+        <div class="section">
+            <div id="about" class="anchor"></div>
+            <h1>关于中国AI大模型工业应用指数</h1>
+            <p style="line-height: 150%">
+                人工智能大模型作为实现通用人工智能的重要途径，正在对制造业的产业发展和应用模式产生变革性影响。近期，中国工业互联网研究院依托通用人工智能与工业融合创新中心（筹备组，简称“中心”），联合香港科技大学，深入研究AI大模型在工业领域的应用性能、技术架构与标准体系。<br><br>
+
+                本报告聚焦评测人工智能大模型在中文工业领域的知识问答能力,通过选取工业领域典型的八大行业,构建知识测试集，对国内外具有代表性的若干大模型进行评测，选取性能前六名的模型进行公布，并发布前十名的数据供业界进行参考。<br><br>
+
+                工业领域对人工智能大模型的应用稳定性要求极高，本报告同时也聚焦评测大模型在工业领域的知识问答稳定性，通过选取工业领域典型的八大行业，构建基础知识测试集与变体测试集，对国内外具有代表性的AI大模型在文法、数据、精简表达、扩充表达四大类八个子维度展开深入评估。选取性能前五名的模型进行公布，并发布前十名的数据，供业界进行参考。<br><br>
+
+                本报告评测结果虽经中心专家委认真论证，但因大模型迭代速度快，评测结果仅适用于测试期间。报告难免存在分析结论片面与不足，欢迎大家批评指正。
+            </p>
+
+        </div>
+
+        <!-- <hr> -->
+        <div class="section">
+            <div id="dataset" class="anchor"></div>
+            <h1>数据集</h1>
+            <div id="example-box">
+                <img class="example-img" src="img/dataset.png" style="width: 98%" alt="dataset.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/datasetstable.png" style="width: 98%" alt="datasetstable.png" />
+            </div>
+        </div>
+
+        <!-- <hr> -->
+        <div class="section">
+            <div id="method" class="anchor"></div>
+            <h1>测试方法</h1>
+            <div id="example-box">
+                <img class="example-img" src="img/method1.png" style="width: 98%" alt="method1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/method1.png" style="width: 98%" alt="method1.png" />
+            </div>
+        </div>
+
+
+        <!-- Leaderboard -->
+        <div class="section" id="leaderboard">
+            <h1>排行榜</h1>
+            <h2>准确性测评结果</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy1.jpg" style="width: 98%" alt="accuracy1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy2.jpg" style="width: 98%" alt="accuracy2.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy3.jpg" style="width: 98%" alt="accuracy3.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy4.jpg" style="width: 98%" alt="accuracy4.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy5.jpg" style="width: 98%" alt="accuracy5.jpg" />
+            </div>
+            <h2>准确性测评结果-客观题</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-objective1.jpg" style="width: 98%" alt="accuracy-objective1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-objective2.jpg" style="width: 98%" alt="accuracy-objective2.jpg" />
+            </div>
+            <h2>准确性测评结果-主观题</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-subjective1.jpg" style="width: 98%" alt="accuracy-subjective1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-subjective2.jpg" style="width: 98%" alt="accuracy-subjective2.jpg" />
+            </div>
+            <h2>准确性测评结果-自我认知能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-self1.jpg" style="width: 98%" alt="accuracy-self1.jpg" />
+            </div>
+            <h2>准确性测评结果-污染问题分析能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-contaminate1.jpg" style="width: 98%" alt="accuracy-contaminate1.jpg" />
+            </div>
+            <h2>稳定性测评结果</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable1.png" style="width: 98%" alt="stable1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable2.png" style="width: 98%" alt="stable2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable3.png" style="width: 98%" alt="stable3.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable4.png" style="width: 98%" alt="stable4.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable4.png" style="width: 98%" alt="stable4.png" />
+            </div>
+            <h2>稳定性测评结果-数据稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data1.png" style="width: 98%" alt="stable-data1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data2.png" style="width: 98%" alt="stable-data2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data3.png" style="width: 98%" alt="stable-data3.png" />
+            </div>
+            <h2>稳定性测评结果-文法稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar1.png" style="width: 98%" alt="stable-grammar1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar2.png" style="width: 98%" alt="stable-grammar2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar3.png" style="width: 98%" alt="stable-grammar3.png" />
+            </div>
+            <h2>稳定性测评结果-精简表达稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify1.png" style="width: 98%" alt="stable-simplify1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify2.png" style="width: 98%" alt="stable-simplify2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify3.png" style="width: 98%" alt="stable-simplify3.png" />
+            </div>
+            <h2>稳定性测评结果-扩充表达稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-expand1.png" style="width: 98%" alt="stable-expand1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-expand2.png" style="width: 98%" alt="stable-expand2.png" />
+            </div>
+            
+
+        </div>
+
+        <!-- Authors -->
+        <div class="section" id="authors" style="align-content: center">
+            <h1>专家组成员</h1>
+            <div id="example-box">
+                <img class="example-img" src="img/panelist1.png" style="width: 98%" alt="panelist1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/panelist2.png" style="width: 98%" alt="panelist2.png" />
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="section" id="contact">
+            <h1>联系方式</h1>
+            <p>
+                叶老师 13661350566 吴老师 15210188099
+            </p>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <div id="footer" style="font-size: 12pt">
+        © 2023 HKUST. Website developed based on the ScienceQA template.
+    </div>
+</body>
+
+</html>

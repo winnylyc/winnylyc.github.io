@@ -11,6 +11,7 @@
     --nav-color: #212529;
     --nav-color-light: #353c42;
     --nav-darkblue: #05004a;
+    --caii-darkblue: rgb(23, 54, 93);
 }
 
 html {
@@ -128,7 +129,7 @@ li {
     font-weight: bold;
     color: white;
     /* background: linear-gradient(to bottom, var(--nav-darkblue), var(--UCLA-blue)); */
-    background: linear-gradient(180deg, var(--nav-darkblue), var(--UCLA-blue));
+    background: linear-gradient(180deg, var(--caii-darkblue), var(--UCLA-blue));
     /* background: linear-gradient(, var(--UCLA-darkblue), var(--UCLA-blue) 60%, white); */
 }
 

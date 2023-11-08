@@ -3,7 +3,8 @@
     width: 96%;
     height: var(--nav-height);
     /* background-color: var(--nav-darkblue); */
-    background-color: #212529;
+    /* background-color: #212529; */
+    background-color: rgb(23,54,93);
     position: fixed;
     top: 0;
     z-index: 10;

@@ -32,6 +32,13 @@
     color: white;
 }
 
+
+.nav-button-1 {
+    margin-left: 20px;
+    font-family: var(--nav-font);
+    color:rgb(192, 0, 0);
+}
+
 .nav-button:hover {
     color: var(--UCLA-gold);
 }

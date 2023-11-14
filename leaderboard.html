@@ -1,107 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaderboard | ScienceQA: Science Question Answering</title>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <title>LLM-Rank</title>
+    <link rel="icon" href="img/caii.png" type="image/icon type">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/leaderboard.css">
-    <script type="text/javascript" src="javascript/leaderboard/sort-table.js" defer></script>
-    <script type="text/javascript" src="javascript/leaderboard/leaderboard-data.js" defer></script>
-    <script type="text/javascript" src="javascript/leaderboard/leaderboard.js" defer></script>
+    <script src="javascript/index.js" defer></script>
 </head>
 
 <body>
     <div id="nav">
         <div id="icon">
-            <img src="img/logo.png" id="nav-icon">
-            <a class="nav-button" href="https://scienceqa.github.io/"
-                style="margin-left: 2px; font-size: 24px">ScienceQA
+            <a class="nav-button-1" href="index.html"
+                style="margin-left: 2px; font-size: 24px">CAII
             </a>
         </div>
         <div>
-            <a class="nav-button" href="index.html#home">Home</a>
-            <a class="nav-button" href="index.html#dataset">Dataset</a>
-            <a class="nav-button" href="index.html#download">Download</a>
-            <a class="nav-button" href="index.html#method">Method</a>
-            <a class="nav-button" href="index.html#paper">Paper</a>
-            <a class="nav-button" href="index.html#code">Code</a>
-            <a class="nav-button" href="index.html#citation">Citation</a>
-            <a class="nav-button" href="index.html#authors">Authors</a>
-            <a class="nav-button" href="index.html#contact">Contact</a>
-            <a class="nav-button" href="leaderboard.html">Leaderboard</a>
-            <a class="nav-button" href="explore.html">Explore</a>
-            <a class="nav-button" href="visualize.html">Visualize</a>
+            <a class="nav-button" href="index.html#home">主页</a>
+            <a class="nav-button" href="index.html#authors">专家组成员</a>
+            <a class="nav-button" href="index.html#contact">联系方式</a>
+            <a class="nav-button" href="dataset.html">数据集</a>
+            <a class="nav-button" href="method.html">测试方法</a>
+            <a class="nav-button" href="https://github.com/winnylyc/llm-standard">Github</a>
+            <a class="nav-button" href="leaderboard.html">排行榜</a>
+            <!-- <a class="nav-button" href="leaderboard.html">排行榜</a> -->
+            <a class="nav-button" href="example.html">例题展示</a>
+            <a class="nav-button" href="visualize.html">可视化比较</a>
         </div>
     </div>
+
+    <!-- anchor for the home button -->
+    <div id="home" style="position: absolute; top: 0;"></div>
+
+    <!-- the main body of the page -->
+    <!-- each section uses an empty div as an anchor -->
     <div id="body">
         <br><br><br><br>
         <div class="section">
-            <h1>Leaderboard - ScienceQA</h1>
-            <p>
-                Evaluation of different menthods on the <strong>test</strong> split.
-                The accuracies over different classes and on average are reported below.
-            </p>
-            <p>
-                &#128512 You are welcome to contribute your results to the ScienceQA test split! Please fill in this
-                <a href="https://forms.gle/iwEMepqowMkknNvb8" class="ext-link">Google Form
-                </a> to submit your results.
-            </p>
-
-
-            <!-- https://www.cssscript.com/sort-table-header-column/ -->
-            <table class="js-sort-table" id="results">
-                <thead>
-                    <tr>
-                        <td class="js-sort-number"><strong>#</strong></td>
-                        <td class="js-sort-number"><strong>Method</strong></td>
-                        <!-- <td class="js-sort-number"><strong>Learning</strong></td> -->
-                        <td class="js-sort-number"><strong>Paper</strong></td>
-                        <td class="js-sort-number"><strong>Date</strong></td>
-                        <td class="js-sort-number"><strong>Size</strong></td>
-                        <td class="js-sort-number"><strong>Param</strong></td>
-                        <td class="js-sort-number"><strong><u>Avg</u></strong></td>
-                        <td class="js-sort-number"><strong>NAT</strong></td>
-                        <td class="js-sort-number"><strong>SOC</strong></td>
-                        <td class="js-sort-number"><strong>LAN</strong></td>
-                        <td class="js-sort-number"><strong>TXT</strong></td>
-                        <td class="js-sort-number"><strong>IMG</strong></td>
-                        <td class="js-sort-number"><strong>NO</strong></td>
-                        <td class="js-sort-number"><strong>G1-6</strong></td>
-                        <td class="js-sort-number"><strong>G7-12</strong></td>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-                
-            </table>
-            <p>
-                <strong>Method names:</strong>
-                <li>Q = question</li>
-                <li>C = context</li>
-                <li>M = multiple options</li>
-                <li>A = answer</li>
-                <li>AE = answer with explanation</li>
-                <li>ALE = answer with lecture and explanation</li>
-                </li>
-            </p>
-            <p>
-                <strong>Accuracies for different question sets:</strong>
-                <li>NAT: questions of the natural science subject</li>
-                <li>SOC: questions of the social science subject</li>
-                <li>LAN: questions of the language science subject</li>
-                <li>TXT: questions with the text context</li>
-                <li>IMG: questions with the image context</li>
-                <li>NO: questions with no context</li>
-                <li>G1-6: questions in the grade group of 1-6</li>
-                <li>G7-12: questions in the grade group of 7-12</li>
-                <li>Avg: all questions (reporting the average accuracy)</li>
-                </li>
-            </p>
+            <h2>准确性测评结果</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy1.jpg" style="width: 98%" alt="accuracy1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy2.jpg" style="width: 98%" alt="accuracy2.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy3.jpg" style="width: 98%" alt="accuracy3.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy4.jpg" style="width: 98%" alt="accuracy4.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy5.jpg" style="width: 98%" alt="accuracy5.jpg" />
+            </div>
+            <h2>准确性测评结果-客观题</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-objective1.jpg" style="width: 98%" alt="accuracy-objective1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-objective2.jpg" style="width: 98%" alt="accuracy-objective2.jpg" />
+            </div>
+            <h2>准确性测评结果-主观题</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-subjective1.jpg" style="width: 98%" alt="accuracy-subjective1.jpg" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-subjective2.jpg" style="width: 98%" alt="accuracy-subjective2.jpg" />
+            </div>
+            <h2>准确性测评结果-自我认知能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-self1.jpg" style="width: 98%" alt="accuracy-self1.jpg" />
+            </div>
+            <h2>准确性测评结果-污染问题分析能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/accuracy-contaminate1.jpg" style="width: 98%" alt="accuracy-contaminate1.jpg" />
+            </div>
+            <h2>稳定性测评结果</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable1.png" style="width: 98%" alt="stable1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable2.png" style="width: 98%" alt="stable2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable3.png" style="width: 98%" alt="stable3.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable4.png" style="width: 98%" alt="stable4.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable4.png" style="width: 98%" alt="stable4.png" />
+            </div>
+            <h2>稳定性测评结果-数据稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data1.png" style="width: 98%" alt="stable-data1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data2.png" style="width: 98%" alt="stable-data2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-data3.png" style="width: 98%" alt="stable-data3.png" />
+            </div>
+            <h2>稳定性测评结果-文法稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar1.png" style="width: 98%" alt="stable-grammar1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar2.png" style="width: 98%" alt="stable-grammar2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-grammar3.png" style="width: 98%" alt="stable-grammar3.png" />
+            </div>
+            <h2>稳定性测评结果-精简表达稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify1.png" style="width: 98%" alt="stable-simplify1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify2.png" style="width: 98%" alt="stable-simplify2.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-simplify3.png" style="width: 98%" alt="stable-simplify3.png" />
+            </div>
+            <h2>稳定性测评结果-扩充表达稳定能力</h2>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-expand1.png" style="width: 98%" alt="stable-expand1.png" />
+            </div>
+            <div id="example-box">
+                <img class="example-img" src="img/stable-expand2.png" style="width: 98%" alt="stable-expand2.png" />
+            </div>
         </div>
     </div>
 </body>

@@ -41,13 +41,11 @@
     <!-- each section uses an empty div as an anchor -->
     <div id="body">
         <br><br><br><br>
+        <h2>行业维度下准确性测评结果 Top 6</h2>
         <table class="js-sort-table" id="results">
             <thead>
                 <tr>
-                    <!-- <td class="js-sort-number"><strong>#</strong></td> -->
                     <td class="js-sort-number"><strong>模型</strong></td>
-                    <!-- <td class="js-sort-number"><strong>Learning</strong></td> -->
-                    <td class="js-sort-number"><strong>平均</strong></td>
                     <td class="js-sort-number"><strong>电子设备制造</strong></td>
                     <td class="js-sort-number"><strong>装备制造</strong></td>
                     <td class="js-sort-number"><strong>钢铁</strong></td>
@@ -56,12 +54,12 @@
                     <td class="js-sort-number"><strong>石化化工</strong></td>
                     <td class="js-sort-number"><strong>建材</strong></td>
                     <td class="js-sort-number"><strong>纺织</strong></td>
+                    <td class="js-sort-number"><strong>平均</strong></td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td style="text-align: left;"><strong>GPT4</strong></td>
-                    <td>62.3</td>
                     <td>76.8</td>
                     <td>71.9</td>
                     <td>62.3</td>
@@ -70,10 +68,10 @@
                     <td>65.8</td>
                     <td>52.2</td>
                     <td>57.7</td>
+                    <td>62.3</td>
                 </tr>
                 <tr>
                     <td style="text-align: left;"><strong>GPT3.5</strong></td>
-                    <td>53.7</td>
                     <td>62.9</td>
                     <td>52.4</td>
                     <td>57.7</td>
@@ -82,10 +80,10 @@
                     <td>55.2</td>
                     <td>50.5</td>
                     <td>47.3</td>
+                    <td>53.7</td>
                 </tr>
                 <tr>
                     <td style="text-align: left;"><strong>文心一言</strong></td>
-                    <td>61.7</td>
                     <td>69.5</td>
                     <td>65.8</td>
                     <td>66.9</td>
@@ -94,22 +92,10 @@
                     <td>58.1</td>
                     <td>56.4</td>
                     <td>49.3</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>文心一言</strong></td>
                     <td>61.7</td>
-                    <td>69.5</td>
-                    <td>65.8</td>
-                    <td>66.9</td>
-                    <td>53.6</td>
-                    <td>64.0</td>
-                    <td>58.1</td>
-                    <td>56.4</td>
-                    <td>49.3</td>
                 </tr>
                 <tr>
                     <td style="text-align: left;"><strong>ChatGLM</strong></td>
-                    <td>53.6</td>
                     <td>62.2</td>
                     <td>54.9</td>
                     <td>56.6</td>
@@ -118,22 +104,10 @@
                     <td>50.4</td>
                     <td>51.8</td>
                     <td>50.8</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;"><strong>ChatGLM</strong></td>
                     <td>53.6</td>
-                    <td>62.2</td>
-                    <td>54.9</td>
-                    <td>56.6</td>
-                    <td>44.7</td>
-                    <td>56.3</td>
-                    <td>50.4</td>
-                    <td>51.8</td>
-                    <td>50.8</td>
                 </tr>
                 <tr>
                     <td style="text-align: left;"><strong>360智脑</strong></td>
-                    <td>51.7</td>
                     <td>59.9</td>
                     <td>60.3</td>
                     <td>47.3</td>
@@ -142,10 +116,10 @@
                     <td>54.0</td>
                     <td>49.7</td>
                     <td>48.8</td>
+                    <td>51.7</td>
                 </tr>
                 <tr>
                     <td style="text-align: left;"><strong>天工大模型</strong></td>
-                    <td>50.9</td>
                     <td>55.5</td>
                     <td>53.9</td>
                     <td>50.6</td>
@@ -154,10 +128,281 @@
                     <td>51.4</td>
                     <td>44.4</td>
                     <td>45.6</td>
+                    <td>50.9</td>
                 </tr>
             </tbody>
             
         </table>
+
+        <h2>能力维度下准确性测评结果 Top 6</h2>
+        <table class="js-sort-table" id="results">
+            <thead>
+                <tr>
+                    <td class="js-sort-number"><strong>模型</strong></td>
+                    <td class="js-sort-number"><strong>客观准确度</strong></td>
+                    <td class="js-sort-number"><strong>主观准确度</strong></td>
+                    <td class="js-sort-number"><strong>语句能力</strong></td>
+                    <td class="js-sort-number"><strong>概括能力</strong></td>
+                    <td class="js-sort-number"><strong>逻辑能力</strong></td>
+                    <td class="js-sort-number"><strong>自我认知能力</strong></td>
+                    <td class="js-sort-number"><strong>污染分析能力</strong></td>
+                    <td class="js-sort-number"><strong>平均</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT4</strong></td>
+                    <td>56.9</td>
+                    <td>69.8</td>
+                    <td>76.8</td>
+                    <td>76.2</td>
+                    <td>75.1</td>
+                    <td>12.9</td>
+                    <td>90</td>
+                    <td>65.4</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT3.5</strong></td>
+                    <td>56.2</td>
+                    <td>61.6</td>
+                    <td>75.3</td>
+                    <td>68.2</td>
+                    <td>68.9</td>
+                    <td>0.73</td>
+                    <td>20</td>
+                    <td>50.1</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>文心一言</strong></td>
+                    <td>48.1</td>
+                    <td>63.8</td>
+                    <td>74.9</td>
+                    <td>70.2</td>
+                    <td>70.4</td>
+                    <td>1.48</td>
+                    <td>10</td>
+                    <td>48.4</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>ChatGLM</strong></td>
+                    <td>47.5</td>
+                    <td>68.4</td>
+                    <td>74.4</td>
+                    <td>68.2</td>
+                    <td>67.6</td>
+                    <td>5.4</td>
+                    <td>0</td>
+                    <td>47.4</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>360智脑</strong></td>
+                    <td>47.1</td>
+                    <td>56.9</td>
+                    <td>74.4</td>
+                    <td>68.2</td>
+                    <td>67.6</td>
+                    <td>5.4</td>
+                    <td>0</td>
+                    <td>43.7</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>天工大模型</strong></td>
+                    <td>44.3</td>
+                    <td>61.8</td>
+                    <td>73.1</td>
+                    <td>65.4</td>
+                    <td>62.9</td>
+                    <td>0.2</td>
+                    <td>0</td>
+                    <td>44.2</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>行业维度下稳定性测评结果 Top 6</h2>
+        <table class="js-sort-table" id="results">
+            <thead>
+                <tr>
+                    <td class="js-sort-number"><strong>模型</strong></td>
+                    <td class="js-sort-number"><strong>电子设备制造</strong></td>
+                    <td class="js-sort-number"><strong>装备制造</strong></td>
+                    <td class="js-sort-number"><strong>钢铁</strong></td>
+                    <td class="js-sort-number"><strong>采矿</strong></td>
+                    <td class="js-sort-number"><strong>电力</strong></td>
+                    <td class="js-sort-number"><strong>石化化工</strong></td>
+                    <td class="js-sort-number"><strong>建材</strong></td>
+                    <td class="js-sort-number"><strong>纺织</strong></td>
+                    <td class="js-sort-number"><strong>平均</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT4</strong></td>
+                    <td>92</td>
+                    <td>84</td>
+                    <td>82</td>
+                    <td>82</td>
+                    <td>81</td>
+                    <td>84</td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>83</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT3.5</strong></td>
+                    <td>89</td>
+                    <td>80</td>
+                    <td>81</td>
+                    <td>81</td>
+                    <td>80</td>
+                    <td>81</td>
+                    <td>78</td>
+                    <td>79</td>
+                    <td>81</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>星火认知大模型</strong></td>
+                    <td>67</td>
+                    <td>71</td>
+                    <td>76</td>
+                    <td>75</td>
+                    <td>76</td>
+                    <td>68</td>
+                    <td>79</td>
+                    <td>75</td>
+                    <td>73</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>ChatGLM</strong></td>
+                    <td>63</td>
+                    <td>75</td>
+                    <td>62</td>
+                    <td>76</td>
+                    <td>64</td>
+                    <td>67</td>
+                    <td>68</td>
+                    <td>68</td>
+                    <td>68</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>360智脑</strong></td>
+                    <td>74</td>
+                    <td>74</td>
+                    <td>69</td>
+                    <td>71</td>
+                    <td>69</td>
+                    <td>76</td>
+                    <td>68</td>
+                    <td>74</td>
+                    <td>72</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>天工大模型</strong></td>
+                    <td>55</td>
+                    <td>83</td>
+                    <td>81</td>
+                    <td>75</td>
+                    <td>61</td>
+                    <td>72</td>
+                    <td>60</td>
+                    <td>74</td>
+                    <td>70</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>能力维度下稳定性测评结果 Top 6</h2>
+        <table class="js-sort-table" id="results">
+            <thead>
+                <tr>
+                    <td class="js-sort-number"><strong>模型</strong></td>
+                    <td class="js-sort-number"><strong>语义理解</strong></td>
+                    <td class="js-sort-number"><strong>顺序变化</strong></td>
+                    <td class="js-sort-number"><strong>逻辑判断</strong></td>
+                    <td class="js-sort-number"><strong>数值</strong></td>
+                    <td class="js-sort-number"><strong>量纲</strong></td>
+                    <td class="js-sort-number"><strong>安全</strong></td>
+                    <td class="js-sort-number"><strong>上下文</strong></td>
+                    <td class="js-sort-number"><strong>不相关选项</strong></td>
+                    <td class="js-sort-number"><strong>平均</strong></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT4</strong></td>
+                    <td>95.7</td>
+                    <td>78.7</td>
+                    <td>86.3</td>
+                    <td>89.2</td>
+                    <td>86.7</td>
+                    <td>87.3</td>
+                    <td>91.8</td>
+                    <td>85.9</td>
+                    <td>87.7</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>GPT3.5</strong></td>
+                    <td>94.2</td>
+                    <td>76.9</td>
+                    <td>83.7</td>
+                    <td>88.1</td>
+                    <td>83.3</td>
+                    <td>84.7</td>
+                    <td>90.2</td>
+                    <td>83.2</td>
+                    <td>85.5</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>星火认知大模型</strong></td>
+                    <td>88.1</td>
+                    <td>61.4</td>
+                    <td>68.5</td>
+                    <td>79.8</td>
+                    <td>73.6</td>
+                    <td>79.6</td>
+                    <td>86.8</td>
+                    <td>76.3</td>
+                    <td>76.8</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>通义千问</strong></td>
+                    <td>96.9</td>
+                    <td>45.6</td>
+                    <td>45.5</td>
+                    <td>86.5</td>
+                    <td>91.7</td>
+                    <td>82.5</td>
+                    <td>88.6</td>
+                    <td>75.7</td>
+                    <td>76.6</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>360智脑</strong></td>
+                    <td>87.3</td>
+                    <td>64.7</td>
+                    <td>65.4</td>
+                    <td>77</td>
+                    <td>68.8</td>
+                    <td>83.4</td>
+                    <td>82.5</td>
+                    <td>70.8</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>云从大模型</strong></td>
+                    <td>90.2</td>
+                    <td>53.3</td>
+                    <td>47.3</td>
+                    <td>84.5</td>
+                    <td>80</td>
+                    <td>78</td>
+                    <td>84.5</td>
+                    <td>69.4</td>
+                    <td>73.4</td>
+                </tr>
+            </tbody>
+        </table>
+
         <div class="section">
             <h2>准确性测评结果</h2>
             <div id="example-box">
